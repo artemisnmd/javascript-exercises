@@ -3,9 +3,7 @@ const sumAll = function(...args) {
     let min = args[0];
     let max = args[args.length-1];
     
-    if(typeof(min) != "number" || typeof(max) != "number"){
-        return "ERROR";
-    } else if (!Number.isInteger(min) || !Number.isInteger(max)){
+    if (!Number.isInteger(min) || !Number.isInteger(max)){
         return "ERROR";
     } else if (min < 0 || max < 0){
         return "ERROR";
